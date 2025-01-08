@@ -73,6 +73,18 @@ runs:
         node-version: '22.x'
     - run: node ${{ github.action_path }}/dist/index.js
       shell: bash
+      with:
+        github-comment: ${{ inputs.github-comment }}
+        github-token: ${{ inputs.github-token }}
+        working-directory: ${{ inputs.working-directory }}
+        vercel-version: ${{ inputs.vercel-version }}
+        vercel-token: ${{ inputs.vercel-token }}
+        vercel-args: ${{ inputs.vercel-args }}
+        vercel-org-id: ${{ inputs.vercel-org-id }}
+        vercel-project-id: ${{ inputs.vercel-project-id }}
+        scope: ${{ inputs.scope }}
+        vercel-project-name: ${{ inputs.vercel-project-name }}
+        alias-domains: ${{ inputs.alias-domains }}
 
 branding:
   icon: 'triangle'
