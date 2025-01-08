@@ -11,7 +11,7 @@
     "email": "amond@amond.net",
     "url": "https://amond.dev"
   },
-  "version": "v1",
+  "version": "v3",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",

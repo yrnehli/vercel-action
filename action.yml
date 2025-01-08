@@ -73,7 +73,7 @@ runs:
         node-version: '22.x'
     - run: node ${{ github.action_path }}/dist/index.js
       shell: bash
-      with:
+      env:
         github-comment: ${{ inputs.github-comment }}
         github-token: ${{ inputs.github-token }}
         working-directory: ${{ inputs.working-directory }}
