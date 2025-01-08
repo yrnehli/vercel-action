@@ -71,7 +71,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: '22.x'
-    - run: node dist/index.js
+    - run: node ${{ github.action_path }}/dist/index.js
       shell: bash
 
 branding:
